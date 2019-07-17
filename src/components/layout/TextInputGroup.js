@@ -9,7 +9,8 @@ const TextInputGroup = ({
   type,
   onChange,
   minLength,
-  required
+  required,
+  disabled
 }) => {
   return (
     <div className="form-group">
@@ -23,6 +24,7 @@ const TextInputGroup = ({
         minLength={minLength}
         onChange={onChange}
         required={required}
+        disabled={disabled}
       />
     </div>
   );
