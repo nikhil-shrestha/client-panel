@@ -35,7 +35,7 @@ class AddClient extends Component {
   };
 
   render() {
-    const { firstName, lastName, email, phone, balance, errors } = this.state;
+    const { firstName, lastName, email, phone, balance } = this.state;
     return (
       <div>
         <div className="row">
