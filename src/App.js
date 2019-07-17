@@ -10,6 +10,7 @@ import AppNavbar from './components/layout/AppNavbar';
 import Dashboard from './components/layout/Dashboard';
 import AddClient from './components/clients/AddClient';
 import ClientDetails from './components/clients/ClientDetails';
+import Settings from './components/settings/Settings';
 
 import './App.css';
 
@@ -36,6 +37,11 @@ class App extends Component {
                   exact
                   path="/client/:id"
                   component={UserIsAuthenticated(ClientDetails)}
+                />
+                <Route
+                  exact
+                  path="/settings"
+                  component={UserIsAuthenticated(Settings)}
                 />
                 <Route
                   exact
